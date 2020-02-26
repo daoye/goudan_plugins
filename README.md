@@ -12,13 +12,18 @@ spiders目录下的每一个.py文件都是一个插件，这些插件从不同�
 打开狗蛋根目录下的配置文件： `setting.py`， 并在`plugins`变量中添加配置，比如像下面这样:
 
     plugins = [
-        "C:\\Projects\\goudan_plugins\\src\\example.py",
+        # "C:\\Projects\\goudan_plugins\\src\\example.py",
         # "C:\\Projects\\goudan_plugins\\src\\spiders\\data5uSpider.py",
         # "C:\\Projects\\goudan_plugins\\src\\spiders\\freeHTTPSpider.py",
         # "C:\\Projects\\goudan_plugins\\src\\spiders\\freeHTTPSSpider.py",
         # "C:\\Projects\\goudan_plugins\\src\\spiders\\kuaidailiSpider.py",
         # "C:\\Projects\\goudan_plugins\\src\\spiders\\spysoneSpider.py",
         # "C:\\Projects\\goudan_plugins\\src\\spiders\\xiciSpider.py"
+        "https://raw.githubusercontent.com/daoye/goudan_plugins/master/src/spiders/data5uSpider.py",
+        "https://raw.githubusercontent.com/daoye/goudan_plugins/master/src/spiders/freeHTTPSpider.py",
+        "https://raw.githubusercontent.com/daoye/goudan_plugins/master/src/spiders/kuaidailiSpider.py",
+        "https://raw.githubusercontent.com/daoye/goudan_plugins/master/src/spiders/spysoneSpider.py",
+        "https://raw.githubusercontent.com/daoye/goudan_plugins/master/src/spiders/xiciSpider.py"
     ]
 
 这个名叫 `plugins` 的变量是一个字符串类型的数组，数组中的每一项都指定了一个插件的路径，路径可以是远程路径或者是本地路径。远程路径必须以`http或https`开头，本地路径则必须是完整的全路径。
